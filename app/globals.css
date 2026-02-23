@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-50: #f8f7f4;
+  --color-brand-100: #efeee8;
+  --color-brand-200: #dddbd0;
+  --color-brand-300: #c5c2b2;
+  --color-brand-400: #aaa693;
+  --color-brand-500: #928d78;
+  --color-brand-600: #7a7565;
+  --color-brand-700: #635f53;
+  --color-brand-800: #524f46;
+  --color-brand-900: #47443d;
+  --color-brand-950: #262420;
+  --color-accent: #c8a97e;
+  --color-accent-dark: #a88b62;
+  --color-surface: rgba(255, 255, 255, 0.6);
+  --color-surface-dark: rgba(10, 10, 10, 0.7);
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+}
+
+:root {
+  --background: #fafaf8;
+  --foreground: #1a1a18;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-dark {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Premium gradient backgrounds */
+.gradient-hero {
+  background: linear-gradient(135deg, #fafaf8 0%, #f0ece4 25%, #e8e2d6 50%, #f5f0e8 75%, #fafaf8 100%);
+}
+
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Selection */
+::selection {
+  background: #c8a97e;
+  color: #fff;
+}
+
+/* Link hover style */
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
