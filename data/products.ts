@@ -18,7 +18,7 @@ export const products: Product[] = [
     {
         id: "1",
         name: "Aura Wireless Headphones",
-        price: 349,
+        price: 3000,
         category: "Audio",
         description: "Immersive sound meets minimal design. 40-hour battery, adaptive noise cancellation, and whisper-soft ear cushions.",
         details: [
@@ -45,8 +45,8 @@ export const products: Product[] = [
     {
         id: "2",
         name: "Zenith Smart Watch",
-        price: 429,
-        originalPrice: 499,
+        price: 3750,
+        originalPrice: 5000,
         category: "Electronics",
         description: "Time, redefined. Sapphire crystal display with health monitoring that adapts to your life.",
         details: [
@@ -73,7 +73,7 @@ export const products: Product[] = [
     {
         id: "3",
         name: "Horizon Desk Lamp",
-        price: 189,
+        price: 1000,
         category: "Home",
         description: "Light that moves with you. Adjustable warmth, touch controls, and a silhouette that whispers elegance.",
         details: [
@@ -98,7 +98,7 @@ export const products: Product[] = [
     {
         id: "4",
         name: "Terra Ceramic Vase",
-        price: 79,
+        price: 1250,
         category: "Home",
         description: "Hand-formed imperfection. Each piece is unique — a quiet statement for your living space.",
         details: [
@@ -124,8 +124,8 @@ export const products: Product[] = [
     {
         id: "5",
         name: "Pulse Portable Speaker",
-        price: 199,
-        originalPrice: 249,
+        price: 2500,
+        originalPrice: 3500,
         category: "Audio",
         description: "Sound without boundaries. 360° audio in a form factor that fits your palm.",
         details: [
@@ -152,7 +152,7 @@ export const products: Product[] = [
     {
         id: "6",
         name: "Form Leather Wallet",
-        price: 129,
+        price: 1000,
         category: "Lifestyle",
         description: "Craft meets restraint. Full-grain leather that ages gracefully with every use.",
         details: [
@@ -179,7 +179,7 @@ export const products: Product[] = [
     {
         id: "7",
         name: "Void Sunglasses",
-        price: 219,
+        price: 2000,
         category: "Lifestyle",
         description: "See nothing but what matters. Polarized lenses in a frame that vanishes on your face.",
         details: [
@@ -205,7 +205,7 @@ export const products: Product[] = [
     {
         id: "8",
         name: "Echo Wireless Earbuds",
-        price: 179,
+        price: 2000,
         category: "Audio",
         description: "Disappear into sound. Ultra-light earbuds with spatial audio and seamless pairing.",
         details: [
